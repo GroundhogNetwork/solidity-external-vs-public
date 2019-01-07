@@ -13,7 +13,7 @@ contract Debug {
     bytes32 public constant CONTRACT_CONST_ONE = 0x180e6fe977456676413d21594ff72b84df056409812ba2e51d28187117f143c2;
     bytes32 public domainSeparator;
 
-    function encodeSubscriptionData(
+    function encodeData(
         address one,
         uint256 two,
         bytes memory three,
@@ -53,7 +53,7 @@ contract Debug {
     {
         uint256 twelve = gasleft();
 
-        bytes memory thirteen = encodeSubscriptionData(
+        bytes memory thirteen = encodeData(
             one, two, three, four,
             five, six, seven, eight, nine,
             ten
@@ -78,7 +78,7 @@ contract Debug {
 //    {
 //        uint256 twelve = gasleft();
 //
-//        bytes memory thirteen = encodeSubscriptionData(
+//        bytes memory thirteen = encodeData(
 //            one, two, three, four,
 //            five, six, seven, eight, nine,
 //            ten
